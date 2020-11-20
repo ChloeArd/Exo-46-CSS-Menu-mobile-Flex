@@ -14,14 +14,13 @@ body {
 }
 
 #main {
-    margin: auto;
-    padding: 1rem;
+    width: 100%;
 }
 
 #menu-mobile {
     background-color: cadetblue;
     font-weight: bold;
-    font-size: 1.9rem;
+    font-size: 1.4rem;
     display: flex;
     flex-direction:row;
     justify-content: center;
@@ -33,9 +32,17 @@ body {
 #menu-mobile > a {
     width: auto;
     padding: 1rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     text-decoration: none;
-    color: whitesmoke;
+    color: grey;
+    border-radius: 20px;
+    background-color: #EEEDED;
+    transition: background-color;
+    transition-duration: 1s;
+}
+
+#menu-mobile > a:hover {
+    background-color: #50C3D4;
 }
 
 .ligne {
@@ -44,7 +51,7 @@ body {
     width: 100px;
 }
 
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 600px) {
 
     #main {
         padding: 0;
@@ -64,6 +71,8 @@ body {
         margin: 0;
         margin-top: 1rem;
         margin-bottom: 1rem;
+        background-color: cadetblue;
+        color: white;
     }
 
     .ligne {
