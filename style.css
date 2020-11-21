@@ -74,6 +74,8 @@ body {
     #menu-mobile {
         align-items: flex-start;
         padding-left: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
     }
 
     #menu-mobile span {
@@ -87,5 +89,5 @@ body {
         width: 50%;
         height: 100%;
     }
-    
+
 }
