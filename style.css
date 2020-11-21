@@ -29,6 +29,16 @@ body {
     padding-bottom: 2rem;
 }
 
+#menu-mobile span {
+    color: white;
+    display: none;
+}
+
+#menu-mobile:hover span {
+    transform: rotate(90deg);
+    transition-property: transform;
+}
+
 #menu-mobile > a {
     width: auto;
     padding: 1rem;
@@ -45,17 +55,7 @@ body {
     background-color: #50C3D4;
 }
 
-.ligne {
-    display: none;
-    border-top: 1px solid white;
-    width: 100px;
-}
-
 @media screen and (max-width: 600px) {
-
-    #main {
-        padding: 0;
-    }
 
     #menu-mobile {
         width: 100%;
@@ -65,18 +65,26 @@ body {
     }
 
     #menu-mobile > a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        display: none;
         margin: 0;
         margin-top: 1rem;
         margin-bottom: 1rem;
-        background-color: cadetblue;
-        color: white;
     }
 
-    .ligne {
-        display: flex;
+    #menu-mobile {
+        align-items: flex-start;
+        padding-left: 2rem;
+    }
 
+    #menu-mobile span {
+        display: inline-flex;
+    }
+
+    #menu-mobile:hover a{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 100%;
     }
 }
